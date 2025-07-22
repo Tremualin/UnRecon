@@ -1,9 +1,79 @@
 
 game.png
-size: 1024, 128
+size: 2048, 128
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+TileSets/AbsoluteUnits/Units/Javelin
+  rotate: false
+  xy: 868, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Javelin-1
+  rotate: false
+  xy: 971, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Javelin-2
+  rotate: false
+  xy: 1074, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Ranger
+  rotate: false
+  xy: 1177, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Ranger-1
+  rotate: false
+  xy: 1280, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Ranger-2
+  rotate: false
+  xy: 1383, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Skirmisher
+  rotate: false
+  xy: 1486, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Spec Ops
+  rotate: false
+  xy: 1589, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Spec Ops-1
+  rotate: false
+  xy: 1692, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Spec Ops-2
+  rotate: false
+  xy: 1795, 31
+  size: 95, 81
+  orig: 95, 81
+  offset: 0, 0
+  index: -1
 UnitIcons/Javelin
   rotate: false
   xy: 220, 12
@@ -34,7 +104,7 @@ UnitIcons/Spec Ops
   index: -1
 UnitPromotionIcons/Alpine
   rotate: false
-  xy: 868, 62
+  xy: 1898, 62
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -55,14 +125,14 @@ UnitPromotionIcons/Deceptive
   index: -1
 UnitPromotionIcons/Hit and Run
   rotate: false
-  xy: 926, 62
+  xy: 1956, 62
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Ranger
   rotate: false
-  xy: 868, 4
+  xy: 1898, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -76,7 +146,7 @@ UnitPromotionIcons/Recon
   index: -1
 UnitPromotionIcons/Spotter
   rotate: false
-  xy: 926, 4
+  xy: 1956, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0

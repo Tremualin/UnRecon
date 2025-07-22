@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Scout",
+        "movementType": "Land",
+        "uniques":[
+            "Ignores terrain cost",
+            "Can move immediately once bought",
+            "May enter foreign tiles without open borders",
+            "Comment [City-State territory always counts as friendly territory]",
+            "Invisible to non-adjacent units <in [Vegetation] tiles>",
+            "Can see invisible [Land] units",
+            "[This Unit] gains [10] XP <upon discovering a Natural Wonder>",
+            "[This Unit] gains [5] XP <upon discovering a [Ancient ruins] tile>",
+            "[This Unit] gains [3] XP <upon discovering a [Strategic resource] tile>",
+            "[This Unit] gains [2] XP <upon discovering a [Luxury resource] tile>",
+            "[This Unit] gains [1] XP <upon discovering a [Bonus resource] tile>",
+            "[-50]% Strength <vs cities> <when attacking>",
+            "[-50]% Strength <vs [Water] units>",
+        ]
+    }
+]

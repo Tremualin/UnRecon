@@ -1,0 +1,6 @@
+{
+    "name": "Global uniques",
+    "uniques": [
+        "City-State territory always counts as friendly territory <for [Scout] units>"
+    ]
+}

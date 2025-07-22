@@ -1,0 +1,145 @@
+[
+    // Hide old scouting bonuses
+    {
+        "name": "Scouting I",
+        "uniques": ["[+1] Sight"],
+        "unitTypes": []
+    },
+    {
+        "name": "Scouting II",
+        "prerequisites": ["Scouting I"],
+        "uniques": ["[+1] Sight"],
+        "unitTypes": []
+    },
+    {
+        "name": "Scouting III",
+        "prerequisites": ["Scouting II"],
+        "uniques": ["[+1] Movement"],
+        "unitTypes": []
+    },   
+    {
+        "name": "Hit and Run I",
+        "uniques": [
+            "[+1] Movement",
+            "Can move after attacking",
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Hit and Run II",
+        "prerequisites": ["Hit and Run I"],
+        "uniques": [
+            "[+1] Movement",
+            "Ignores Zone of Control"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Hit and Run III",
+        "prerequisites": ["Hit and Run II"],
+        "uniques": [
+            "[+1] additional attacks per turn",
+            "No movement cost to pillage"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Deceptive",
+        "prerequisites": ["Hit and Run III"],
+        "uniques": [
+            "[-15]% Strength for enemy [{Military} {Land}] units in adjacent [Land] tiles"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Survivalism I",
+        "uniques": [
+            "[+5] HP when healing <in [Foreign Land] tiles>",
+            "[+25]% Strength <when defending>",
+            "[-33]% maintenance costs"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Survivalism II",
+        "prerequisites": ["Survivalism I"],
+        "uniques": [
+            "[+5] HP when healing <in [Foreign Land] tiles>",
+            "[+25]% Strength <when defending>",
+            "[-33]% maintenance costs"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Survivalism III",
+        "prerequisites": ["Survivalism II"],
+        "uniques": [
+            "Unit will heal every turn, even if it performs an action",
+            "Withdraws before melee combat <with [50]% chance>",
+            "[-34]% maintenance costs"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Ranger",
+        "prerequisites": ["Survivalism II"],
+        "uniques": [
+            "Double movement in [Vegetation]"
+            "[+33]% Strength <when fighting in [Vegetation] tiles>",
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Alpine",
+        "prerequisites": ["Survivalism II"],
+        "uniques": [
+            "Double movement in [Hill]"
+            "[+33]% Strength <when fighting in [Hill] tiles>",
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Spotter I",
+        "uniques": [
+            "[+1] Sight",
+            "[+5]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Spotter II",
+        "prerequisites": ["Spotter I"],
+        "uniques": [
+            "[+1] Sight",
+            "[+10]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Spotter III",
+        "prerequisites": ["Spotter II"],
+        "uniques": [
+            "Can see over obstacles <after discovering [Radar]>",
+            "[+15]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Booby Trapper",
+        "prerequisites": ["Survivalism III", "Spotter III"],
+        "uniques": [
+            "[+25]% Strength <vs [Melee] units> <when defending>",
+            "[+25]% Strength <vs [Melee] units> <when defending> <after discovering [Machinery]>",
+            "[+50]% Strength <vs [Melee] units> <when defending> <after discovering [Dynamite]>",
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Stealthy",
+        "prerequisites": ["Survivalism III", "Hit and Run III", "Spotter III"],
+        "uniques": [
+            "Invisible to others",
+        ],
+        "unitTypes": ["Scout"]
+    },
+]

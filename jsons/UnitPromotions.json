@@ -1,108 +1,20 @@
 [
-    // Hide old scouting bonuses
     {
-        "name": "Scouting I",
-        "uniques": ["[+1] Sight"],
-        "unitTypes": []
-    },
-    {
-        "name": "Scouting II",
+        "name": "Cartographer",
         "prerequisites": ["Scouting I"],
-        "uniques": ["[+1] Sight"],
-        "unitTypes": []
-    },
-    {
-        "name": "Scouting III",
-        "prerequisites": ["Scouting II"],
-        "uniques": ["[+1] Movement"],
-        "unitTypes": []
-    },   
-    {
-        "name": "Hit and Run I",
         "uniques": [
-            "[+1] Movement",
-            "Can move after attacking",
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Hit and Run II",
-        "prerequisites": ["Hit and Run I"],
-        "uniques": [
-            "[+1] Movement",
-            "Ignores Zone of Control"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Hit and Run III",
-        "prerequisites": ["Hit and Run II"],
-        "uniques": [
-            "[+1] additional attacks per turn",
-            "No movement cost to pillage"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Deceptive",
-        "prerequisites": ["Hit and Run III"],
-        "uniques": [
-            "[-15]% Strength for enemy [{Military} {Land}] units in adjacent [Land] tiles"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Survivalism I",
-        "uniques": [
-            "[+5] HP when healing <in [Foreign Land] tiles>",
-            "[+25]% Strength <when defending>",
-            "[-33]% maintenance costs"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Survivalism II",
-        "prerequisites": ["Survivalism I"],
-        "uniques": [
-            "[+5] HP when healing <in [Foreign Land] tiles>",
-            "[+25]% Strength <when defending>",
-            "[-33]% maintenance costs"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Survivalism III",
-        "prerequisites": ["Survivalism II"],
-        "uniques": [
-            "Unit will heal every turn, even if it performs an action",
-            "Withdraws before melee combat <with [50]% chance>",
-            "[-34]% maintenance costs"
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Ranger",
-        "prerequisites": ["Survivalism II"],
-        "uniques": [
-            "Double movement in [Vegetation]"
-            "[+33]% Strength <when fighting in [Vegetation] tiles>",
-        ],
-        "unitTypes": ["Scout"]
-    },
-    {
-        "name": "Alpine",
-        "prerequisites": ["Survivalism II"],
-        "uniques": [
-            "Double movement in [Hill]"
-            "[+33]% Strength <when fighting in [Hill] tiles>",
+            "Gain [2] [Science] <(modified by game speed)> <upon discovering a [Coast] tile>",
+            "Gain [2] [Science] <(modified by game speed)> <upon discovering a [Mountain] tile>",
+            "Gain [15] [Culture] <(modified by game speed)> <upon discovering a Natural Wonder>"
         ],
         "unitTypes": ["Scout"]
     },
     {
         "name": "Spotter I",
+        "prerequisites": ["Scouting II"],
         "uniques": [
-            "[+1] Sight",
-            "[+5]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+            "[+10]% Strength bonus for [Ranged] units within [2] tiles",
+            "[+10]% Strength bonus for [Siege] units within [2] tiles"
         ],
         "unitTypes": ["Scout"]
     },
@@ -110,35 +22,101 @@
         "name": "Spotter II",
         "prerequisites": ["Spotter I"],
         "uniques": [
-            "[+1] Sight",
-            "[+10]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+            "Can see invisible [Land] units",
+            "[+10]% Strength bonus for [Ranged] units within [2] tiles",
+            "[+10]% Strength bonus for [Siege] units within [2] tiles"
         ],
         "unitTypes": ["Scout"]
     },
     {
-        "name": "Spotter III",
-        "prerequisites": ["Spotter II"],
+        "name": "Forester",
+        "prerequisites": ["Survivalism I"],
         "uniques": [
-            "Can see over obstacles <after discovering [Radar]>",
-            "[+15]% Strength bonus for [{Military} {Land}] units within [2] tiles"
+            "[+1] Movement <in [Forest] tiles>",
+            "[+1] Movement <in [Jungle] tiles>",
+            "[+15]% Strength <in [Forest] tiles>",
+            "[+15]% Strength <in [Jungle] tiles>"
         ],
         "unitTypes": ["Scout"]
     },
     {
-        "name": "Booby Trapper",
-        "prerequisites": ["Survivalism III", "Spotter III"],
+        "name": "Mountaineer",
+        "prerequisites": ["Survivalism I"],
         "uniques": [
-            "[+25]% Strength <vs [Melee] units> <when defending>",
-            "[+25]% Strength <vs [Melee] units> <when defending> <after discovering [Machinery]>",
-            "[+50]% Strength <vs [Melee] units> <when defending> <after discovering [Dynamite]>",
+            "[+1] Sight <in [Hill] tiles>",
+            "[+1] Movement <in [Hill] tiles>",
+            "[+15]% Strength <in [Hill] tiles>"
         ],
         "unitTypes": ["Scout"]
     },
     {
-        "name": "Stealthy",
-        "prerequisites": ["Survivalism III", "Hit and Run III", "Spotter III"],
+        "name": "Nomad",
+        "prerequisites": ["Survivalism I"],
         "uniques": [
-            "Invisible to others",
+            "[+1] Movement <in [Desert] tiles>",
+            "[+1] Movement <in [Tundra] tiles>",
+            "[+1] Movement <in [Snow] tiles>",
+            "[+15]% Strength <in [Desert] tiles>",
+            "[+15]% Strength <in [Tundra] tiles>",
+            "[+15]% Strength <in [Snow] tiles>"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Mariner",
+        "prerequisites": ["Survivalism I"],
+        "uniques": [
+            "[0] Movement point cost to embark",
+            "[0] Movement point cost to disembark",
+            "Eliminates combat penalty for attacking over a river",
+            "Eliminates combat penalty for attacking across a coast"
+        ],
+        "unitTypes": ["Scout"]
+    },    
+    {
+        "name": "Trailblazer",
+        "prerequisites": ["Survivalism I"],
+        "uniques": [
+            "Can build [All Road] improvements on tiles",
+            "[+100]% construction time for [All Road] improvements"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Outrider I",
+        "prerequisites": ["Survivalism II"],
+        "uniques": [
+            "[+25]% Strength <in [Foreign Land] tiles>",
+            "No movement cost to pillage"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Outrider II",
+        "prerequisites": ["Outrider I"],
+        "uniques": [
+            "Can move after attacking",
+            "Ignores Zone of Control"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Outrider III",
+        "prerequisites": ["Outrider II"],
+        "uniques": [
+            "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
+            "[+15]% to Flank Attack bonuses"
+        ],
+        "unitTypes": ["Scout"]
+    },
+    {
+        "name": "Ghost",
+        "prerequisites": ["Outrider II"],
+        "uniques": [
+            "May enter foreign tiles without open borders",
+            "Invisible to others <in [Rough terrain] tiles>",
+            "Invisible to others <in [improved] tiles>",
+            "Invisible to others <in [pillaged] tiles>"
         ],
         "unitTypes": ["Scout"]
     },

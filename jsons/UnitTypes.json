@@ -3,19 +3,23 @@
         "name": "Scout",
         "movementType": "Land",
         "uniques":[
+            // Begin Early Game Boosts
             "Ignores terrain cost",
             "Can move immediately once bought",
-            "May enter foreign tiles without open borders",
-            "Comment [City-State territory always counts as friendly territory]",
-            "Invisible to non-adjacent units <in [Vegetation] tiles>",
-            "Can see invisible [Land] units",
+            // End Early Game Survival Boost
+            // Begin XP Boost when exploring
             "[This Unit] gains [10] XP <upon discovering a Natural Wonder>",
             "[This Unit] gains [5] XP <upon discovering a [Ancient ruins] tile>",
             "[This Unit] gains [3] XP <upon discovering a [Strategic resource] tile>",
             "[This Unit] gains [2] XP <upon discovering a [Luxury resource] tile>",
             "[This Unit] gains [1] XP <upon discovering a [Bonus resource] tile>",
-            "[-50]% Strength <vs cities> <when attacking>",
-            "[-50]% Strength <vs [Water] units>",
+            // End XP Boost when exploring
+            // Begin XP Boost while doing Recon
+            "[This Unit] gains [2] XP <upon ending a turn in a [Hostile] tile>",
+            // End XP Boost while doing Recon
+            // Begin Escort Boosts
+            "Transfer Movement to [Civilian]",
+            // End Escort Boosts
         ]
     }
 ]

@@ -36,7 +36,7 @@
         "range": 1,
         "requiredTech": "Machinery",
         "obsoleteTech": "Rifling",
-        "upgradesTo": "Explorer",
+        "upgradesTo": "Ranger",
         "attackSound": "metalhit"
     },
     {

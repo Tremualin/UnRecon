@@ -74,7 +74,7 @@
         "range": 1,
         "cost": 340,
         "requiredTech": "Radar",
-        "obsoleteTech": "Telecommunications",
+        "obsoleteTech": "Nanotechnology",
         "upgradesTo": "Operative",
         "uniques": [
             "May Paradrop to [Land] tiles up to [9] tiles away <in [{Friendly} {Land}] tiles>",
